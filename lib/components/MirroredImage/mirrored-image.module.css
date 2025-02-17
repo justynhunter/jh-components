@@ -1,0 +1,24 @@
+.mirror-image {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    width: var(--width);
+
+    &>.image {
+        background-image: var(--image);
+        background-size: cover;
+        width: var(--width);
+        height: var(--image-height);
+
+        &:first-child {
+            flex-shrink: 0;
+        }
+
+        &:last-child {
+            transform: rotatex(180deg);
+            mask-image: linear-gradient(transparent calc(100% - var(--mirror-amount)), black 100%);
+            filter: blur(var(--blur));
+            height: var(--image-height);
+        }
+    }
+}
