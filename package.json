@@ -1,6 +1,14 @@
 {
-    "name": "jh-components",
-    "version": "0.1.4",
+    "name": "@justynhunter/jh-components",
+    "description": "justyn's components",
+    "repository": "git@github.com:justynhunter/jh-components.git",
+    "author": {
+        "name": "Justyn Hunter",
+        "email": "meh",
+        "url": "https://github.com/justynhunter"
+    },
+    "license": "MIT",
+    "version": "0.1.5",
     "type": "module",
     "scripts": {
         "dev": "vite",
