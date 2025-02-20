@@ -16,7 +16,13 @@ export type MirroredImageProps = {
     width: string;
 };
 
-/** Component to display image with mirror effect under it. @see {@link MirroredImageProps} */
+/**
+ * # MirroredImage
+ *
+ * Component to display image with mirror effect under it.
+ *
+ * @see {@link MirroredImageProps}
+ */
 export function MirroredImage({
     blur = "2px",
     gap = "4px",
