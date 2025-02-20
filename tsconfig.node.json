@@ -4,6 +4,15 @@
     "target": "ES2022",
     "lib": ["ES2023"],
     "module": "ESNext",
+    "plugins": [
+        {
+            "name": "typescript-plugin-css-modules",
+            "otpions": {
+                "goToDefinition": true,
+                "classnameTransform": "camelCase"
+            }
+        }
+    ],
     "skipLibCheck": true,
 
     /* Bundler mode */
