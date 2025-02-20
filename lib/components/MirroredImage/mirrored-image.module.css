@@ -19,6 +19,7 @@
             mask-image: linear-gradient(transparent calc(100% - var(--mirror-amount)), black 100%);
             filter: blur(var(--blur));
             height: var(--image-height);
+            background-position: bottom;
         }
     }
 }
