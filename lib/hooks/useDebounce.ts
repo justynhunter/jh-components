@@ -4,6 +4,20 @@ import React, { useCallback, useRef } from "react";
 * useDebounce()
 *
 * debounces the given function
+*
+* ## Example
+* ```tsx
+* function MyComponent() {
+*   const search = useDebounce((searchTerm: string) => doSearch(searchTerm), 500);
+*
+*   return (
+*       <form>
+*           <input onChange={(event) => search(event.target.value)} />
+*           <button type="submit" />
+*       </form>
+*   )
+* }
+* ```
 */
 export function useDebounce<T extends (...args: Parameters<T>) => void>(
     fn: T,
