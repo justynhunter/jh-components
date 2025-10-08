@@ -39,5 +39,6 @@ export function useDebounce<T extends (...args: Parameters<T>) => void>(
         }, delayInMs);
     };
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     return useCallback(debouncer, callbackDeps);
 }
