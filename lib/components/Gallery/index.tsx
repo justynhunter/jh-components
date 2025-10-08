@@ -1,7 +1,9 @@
 import styles from "./style.module.css";
 
 export type GalleryProps = {
-    images: HTMLImageElement & {
+    images: {
+        src: string;
+        alt?: string;
         caption?: string;
     }[];
 }
